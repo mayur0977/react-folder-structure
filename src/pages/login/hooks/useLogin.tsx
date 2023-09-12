@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import loginService from '../login.service';
+import { ILoginReq } from '../login.model';
 
 const useLogin = () => {
   const [authData, setAuthData] = useState<any>(null);
@@ -12,11 +13,11 @@ const useLogin = () => {
       }
     });
   };
-  const loginUser = (values: { email: string; password: string }) => {
+  const loginUser = (values: ILoginReq) => {
     setLoader(true);
     setAuthData(values);
     loginService
-      .loginUser()
+      .loginUser(values)
       .then((res) => {
         if (res.status === 200) {
           setAuthData(res?.data?.data);

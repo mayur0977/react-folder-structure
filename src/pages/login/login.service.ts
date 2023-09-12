@@ -1,7 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
+import { ILoginReq } from './login.model';
 
-const loginUser = (): Promise<AxiosResponse<any, any>> => {
-  return axios.post('url', {});
+const loginUser = (
+  credentialValues: ILoginReq
+): Promise<AxiosResponse<any, any>> => {
+  return axios.post('url/Login', credentialValues);
 };
 const getPreLoginToken = (): Promise<AxiosResponse<any, any>> => {
   return axios.get('url');
