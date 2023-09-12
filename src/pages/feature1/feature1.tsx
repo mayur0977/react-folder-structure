@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import ComponentPartOne from './components/ComponentPartOne';
 import ComponentPartTwo from './components/ComponentPartTwo';
 
-function feature1() {
+function Feature1() {
+  const [first, setfirst] = useState<any>(null);
   return (
     <div>
       <ComponentPartOne />
@@ -10,4 +12,4 @@ function feature1() {
   );
 }
 
-export default feature1;
+export default Feature1;
