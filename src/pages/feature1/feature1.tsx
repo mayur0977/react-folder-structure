@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import ComponentPartOne from './components/ComponentPartOne';
 import ComponentPartTwo from './components/ComponentPartTwo';
+import useFeatureOne from './hooks/useFeature';
 
 function Feature1() {
-  const [first, setfirst] = useState<any>(null);
+  const { featureOneList, isLoading, first } = useFeatureOne();
   return (
     <div>
       <ComponentPartOne />

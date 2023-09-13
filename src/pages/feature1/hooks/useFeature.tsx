@@ -4,7 +4,7 @@ import Feature1Service from '../services/feature1.service';
 const useFeatureOne = () => {
   const [featureOneList, setFeatureOneList] = useState<any[]>([]);
   const [isLoading, setLoader] = useState<boolean>(true);
-
+  const [first, setfirst] = useState<any>(null);
   const getFeatureOneList = () => {
     setLoader(true);
 
@@ -24,7 +24,7 @@ const useFeatureOne = () => {
     getFeatureOneList();
   }, []);
 
-  return { isLoading, featureOneList };
+  return { isLoading, featureOneList, first };
 };
 
 export default useFeatureOne;
