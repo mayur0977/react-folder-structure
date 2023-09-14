@@ -1,5 +1,5 @@
 import React from 'react';
-import ComponentPartOneChild from './componentPartOneChild';
+import ComponentPartOneChild from './ComponentPartOneChild';
 
 function ComponentPartOne() {
   return (
