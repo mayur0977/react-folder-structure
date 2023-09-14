@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { ILoginReq } from './login.model';
+import { ILoginReq } from '../utility/login.model';
 
 const loginUser = (
   credentialValues: ILoginReq
