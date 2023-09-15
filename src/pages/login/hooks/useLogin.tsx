@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import loginService from '../services/login.service';
-import { ILoginReq } from '../utility/login.model';
+import loginService from '../utility/services/login.service';
+import { ILoginReq } from '../utility/models/login.model';
 
 const useLogin = () => {
   const [authData, setAuthData] = useState<any>(null);

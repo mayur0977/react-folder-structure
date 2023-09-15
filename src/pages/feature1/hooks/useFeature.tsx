@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Feature1Service from '../services/feature1.service';
+import Feature1Service from '../utility/services/feature1.service';
 
 const useFeatureOne = () => {
   const [featureOneList, setFeatureOneList] = useState<any[]>([]);

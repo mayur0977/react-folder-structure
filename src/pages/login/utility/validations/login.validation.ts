@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import { emailRegex } from '../utility/login.constant';
+import { emailRegex } from '../constants/login.constant';
 
 /**
  * Validation for login
